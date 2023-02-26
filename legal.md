@@ -24,7 +24,7 @@ You can opt-out of Google Analytics here: <https://tools.google.com/dlpage/gaopt
 
 {% else %}
 
-We do not collect any data about you or use any cookies.
+Lucky you, we do not collect any data about you nor use any cookies.
 
 {% endif %}
 
