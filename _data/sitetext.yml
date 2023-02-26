@@ -71,7 +71,7 @@ en: &DEFAULT_EN
   about:
     title: "About Us"
     text: "Passionate about machine learning"
-    body: "Building and Connecting. We enjoy connecting everything to everything. Can systems learn their way to when we step our of structured data? Sure!"
+    body: "Building and Connecting. We enjoy connecting everything to everything. Helping systems learn their way when stepping out of structured data."
     section: about
 
   clients:
