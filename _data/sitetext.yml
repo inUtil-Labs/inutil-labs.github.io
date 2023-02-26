@@ -85,7 +85,9 @@ en: &DEFAULT_EN
       - title: "apify"
         url: https://apify.com/inutil_labs
         logo: assets/img/clients/apify.png
-
+      - title: "apilayer"
+        url: https://apify.com/inutil_labs
+        logo: assets/img/clients/apilayer.png
 
   team:
     title: "OUR AMAZING TEAM"
