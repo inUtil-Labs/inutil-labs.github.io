@@ -22,7 +22,7 @@ email      : contact@inutil-labs.com #this is also the email contact forms will 
 description: "AI powered microservices"
 author     : inUtil bots
 logo:     #optional, defaults to site title
-  path: assets\img\logo\iutil-web.png
+  path: assets\img\logo\inutil-web.png
   height: 60 #height in px, defaults to 52px
 
 locale: "en-US" # See available languages in _data/sitetext.yml
