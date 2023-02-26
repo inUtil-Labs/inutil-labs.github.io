@@ -82,15 +82,10 @@ en: &DEFAULT_EN
       - title: "rapidapi"
         url: https://rapidapi.com/organization/inutil
         logo: assets/img/clients/rapidapi.png
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+      - title: "apify"
+        url: https://apify.com/inutil_labs
+        logo: assets/img/clients/apify.png
+
 
   team:
     title: "OUR AMAZING TEAM"
