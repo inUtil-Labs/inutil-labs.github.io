@@ -17,8 +17,8 @@ en: &DEFAULT_EN
       section: portfolio
     - title: "About"
       section: about
-    - title: "Timeline"
-      section: timeline
+#    - title: "Timeline"  removed from _layouts
+#      section: timeline
     - title: "Team"
       section: team
     - title: "Contact"
