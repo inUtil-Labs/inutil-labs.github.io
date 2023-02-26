@@ -11,8 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
+    title: Welcome to inUtil Labs!
+    text: Let us introduce you our microservices
     button: Tell Me More
     buttonlink: "#services"
 
