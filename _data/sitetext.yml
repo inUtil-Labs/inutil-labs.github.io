@@ -70,8 +70,8 @@ en: &DEFAULT_EN
 
   about:
     title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    text: "Passionate about machine learning"
+    body: "Building and Connecting. We enjoy connecting everything to everything. Can systems learn their way to when we step our of structured data? Sure!"
     section: about
 
   clients:
