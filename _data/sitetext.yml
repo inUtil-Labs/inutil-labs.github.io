@@ -79,15 +79,18 @@ en: &DEFAULT_EN
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "rapidapi"
-        url: https://rapidapi.com/organization/inutil
-        logo: assets/img/clients/rapidapi.png
       - title: "apify"
         url: https://apify.com/inutil_labs
         logo: assets/img/clients/apify.png
+      - title: "rapidapi"
+        url: https://rapidapi.com/organization/inutil
+        logo: assets/img/clients/rapidapi.png
       - title: "apilayer"
         url: https://apify.com/inutil_labs
         logo: assets/img/clients/apilayer.png
+      - title: "gravitee"
+        url: https://www.gravitee.io
+        logo: assets/img/clients/gravitee.png
 
   team:
     title: "OUR AMAZING TEAM"
