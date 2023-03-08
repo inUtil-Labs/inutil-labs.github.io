@@ -71,7 +71,7 @@ en: &DEFAULT_EN
   about:
     title: "About Us"
     text: "Passionate about machine learning"
-    body: "Building and Connecting. We enjoy connecting everything to everything. Helping systems learn their way when stepping out of structured data."
+    body: "Building and Connecting. We enjoy connecting everything to everything. Helping systems learn their way when stepping out of structured data. Browse our creations on any of these API markets:"
     section: about
 
   clients:
@@ -85,9 +85,9 @@ en: &DEFAULT_EN
       - title: "rapidapi"
         url: https://rapidapi.com/organization/inutil
         logo: assets/img/clients/rapidapi.png
-      - title: "apilayer"
-        url: https://apify.com/inutil_labs
-        logo: assets/img/clients/apilayer.png
+      - title: "postman"
+        url: https://www.postman.com/inutil-labs
+        logo: assets/img/clients/postman.png
       - title: "gravitee"
         url: https://www.gravitee.io
         logo: assets/img/clients/gravitee.png
