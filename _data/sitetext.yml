@@ -11,8 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to inUtil Labs!
-    text: Let us introduce you our microservices
+    title: Accelerate innovation and streamline processes with inUtil Labs
+    text: Maximize your app's potential with our powerful microservices
     button: Tell Me More
     buttonlink: "#services"
 
