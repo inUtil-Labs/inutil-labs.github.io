@@ -11,7 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: We help you accelerate innovation and streamline processes
+    title: Supporting innovation and streamlining processes automation.
     text: AI powered microservices
     button: Tell Me More
     buttonlink: "#services"
