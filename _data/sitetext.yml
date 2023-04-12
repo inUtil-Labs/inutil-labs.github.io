@@ -24,10 +24,10 @@ en: &DEFAULT_EN
       - title: "[whin](https://rapidapi.com/inutil-inutil-default/api/whin2)"
         desc: "Effortlessly send and receive any message type to your WhatsApp or owned groups with this **gateway**."
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "[whatsapp Profile Pic](https://rapidapi.com/inutil-inutil-default/api/whatsapp-profile-pic)"
+      - title: "[whatsapp Profile Pic API](https://rapidapi.com/inutil-inutil-default/api/whatsapp-profile-pic)"
         desc: "Fetch the **profile picture** of any whatsapp number."
         icon: fas fa-laptop
-      - title: "[whatsapp Validator](https://rapidapi.com/inutil-inutil-default/api/bulk-whatsapp-validator)"
+      - title: "[whatsapp Validator API](https://rapidapi.com/inutil-inutil-default/api/bulk-whatsapp-validator)"
         desc: "Check if a number is **registered** on whatsapp and add context based on whatsapp profiles."
         icon: fab fa-markdown
 
