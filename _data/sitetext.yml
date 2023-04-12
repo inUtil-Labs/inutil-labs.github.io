@@ -37,7 +37,7 @@ en: &DEFAULT_EN
         desc: "Soon to be launched."
         icon: fab fa-markdown
       - title: "[gasolinBot](https://twitter.com/BotGasolin)"
-        desc: "Get the gasoline prices, around you."
+        desc: "Get *real-time* oil prices around you."
         icon: fab fa-markdown
 
   portfolio:
