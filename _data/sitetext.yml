@@ -32,10 +32,10 @@ en: &DEFAULT_EN
         icon: far fa-comments
       - title: "[tokin API](https://rapidapi.com/)"
         desc: "Soon to be launched."
-        icon: fas fa-square-question
+        icon: fas fa-question
       - title: "[wapin API](https://rapidapi.com/)"
         desc: "Soon to be launched."
-        icon: fas fa-square-question
+        icon: fas fa-question
       - title: "[gasolinBot](https://twitter.com/BotGasolin)"
         desc: "Get **real-time** oil prices around you."
         icon: fas fa-gas-pump
