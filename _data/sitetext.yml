@@ -23,13 +23,13 @@ en: &DEFAULT_EN
     list:
       - title: "[whin](https://rapidapi.com/inutil-inutil-default/api/whin2)"
         desc: "Effortlessly send and receive any message type to your WhatsApp or owned groups with this **gateway**."
-        icon: fa-brands fa-whatsapp #find more at https://fontawesome.com/icons
+        icon: fab whatsapp #find more at https://fontawesome.com/icons
       - title: "[whatsapp Profile Pic API](https://rapidapi.com/inutil-inutil-default/api/whatsapp-profile-pic)"
         desc: "Fetch the **profile picture** of any whatsapp number."
-        icon: fa-regular fa-id-badge
+        icon: fas id-badge
       - title: "[whatsapp Validator API](https://rapidapi.com/inutil-inutil-default/api/bulk-whatsapp-validator)"
         desc: "Check if a number is **registered** on whatsapp and add context based on whatsapp profiles."
-        icon: fa-regular fa-comments
+        icon: far comments
       - title: "[tokin API](https://rapidapi.com/)"
         desc: "Soon to be launched."
         icon: fab fa-markdown
@@ -38,7 +38,7 @@ en: &DEFAULT_EN
         icon: fab fa-markdown
       - title: "[gasolinBot](https://twitter.com/BotGasolin)"
         desc: "Get **real-time** oil prices around you."
-        icon: fa-solid fa-gas-pump
+        icon: fas gas-pump
 
   portfolio:
     title: "Portfolio"
