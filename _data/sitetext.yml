@@ -17,7 +17,7 @@ en: &DEFAULT_EN
     buttonlink: "#services"
 
   services:
-    title: "Services"
+    title: "the Projects"
     text: "Our handcrafted microservices:"
     section: services
     list:
