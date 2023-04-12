@@ -30,6 +30,12 @@ en: &DEFAULT_EN
       - title: "[whatsapp Validator API](https://rapidapi.com/inutil-inutil-default/api/bulk-whatsapp-validator)"
         desc: "Check if a number is **registered** on whatsapp and add context based on whatsapp profiles."
         icon: fab fa-markdown
+      - title: "[tokin API](https://rapidapi.com/)"
+        desc: "Soon to be launched."
+        icon: fab fa-markdown
+      - title: "[wapin API](https://rapidapi.com/)"
+        desc: "Soon to be launched."
+        icon: fab fa-markdown
 
   portfolio:
     title: "Portfolio"
@@ -131,7 +137,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    text: "you will be using our service *tokin*."
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
