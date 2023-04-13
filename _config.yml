@@ -41,7 +41,3 @@ markdown: kramdown
 
 plugins:
   - jekyll-remote-theme
-
-exclude:
-  - gbot.htm
-

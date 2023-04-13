@@ -36,7 +36,7 @@ en: &DEFAULT_EN
       - title: "[wapin API](https://rapidapi.com/)"
         desc: "Soon to be launched."
         icon: fas fa-question
-      - title: "[gasolinBot](https://twitter.com/BotGasolin)"
+      - title: "[gasolinBot](https://gbot.inutil.info)"
         desc: "Get **real-time** oil prices around you."
         icon: fas fa-gas-pump
 
