@@ -43,5 +43,5 @@ plugins:
   - jekyll-remote-theme
 
 exclude:
-  - gbot.html
+  - gbot.htm
 
