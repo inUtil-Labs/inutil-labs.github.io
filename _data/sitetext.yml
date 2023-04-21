@@ -98,7 +98,7 @@ en: &DEFAULT_EN
         url: https://www.postman.com/inutil-labs
         logo: assets/img/clients/postman.png
       - title: "gravitee"
-        url: https://www.gravitee.io
+        url: https://buy.stripe.com/test_cN29Cr3Ki2aLeVqcMM
         logo: assets/img/clients/gravitee.png
 
   team:
