@@ -3,12 +3,12 @@ layout: page
 title: Privacy Policy
 ---
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Privacy Policy</h2>
+	<h2 class="section-heading text-uppercase">Privacy Policy and Data Security</h2>
 </div>
 
 This Privacy Policy describes how your personal information is collected, used, or shared when you visit {{ site.title }} (the “Site”), or you make use of any of the services listed.
 
-Effective on December 9th, 2019, this Policy applies to iUtil Labs, LLC and its affiliated entities (collectively, "inUtil Labs' or "we" or "us' or "our.") Headquarters for inUtil Labs is located at Delaware, US.
+Effective on December 9th, 2019, this Policy applies to inUtil Labs, LLC and its affiliated entities (collectively, "inUtil Labs' or "we" or "us' or "our.") Headquarters for inUtil Labs is located at Delaware, US.
 
 **PERSONAL INFORMATION WE COLLECT**
 
