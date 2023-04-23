@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Terms of Service
+title: Terms of Services
 ---
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Terms of Service</h2>
+	<h2 class="section-heading text-uppercase">Terms of Services</h2>
 </div>
 
 THIS TERMS OF SERVICES (“AGREEMENT”) CONSTITUTES A BINDING CONTRACT ON YOU AND GOVERNS USE OF AND ACCESS TO THE WEBSITE AND SERVICES provided by inUtil Labs LLC, a Delaware limited liability company ("Company", "we", "us", or "inUtil Labs") BY YOU AND YOUR AGENTS AND END-USERS WHETHER IN CONNECTION WITH A PAID, FREE OR TRIAL SUBSCRIPTION TO THE SERVICES.
