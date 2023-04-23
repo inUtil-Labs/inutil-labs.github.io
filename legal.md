@@ -38,7 +38,7 @@ For this Policy, the term "websites" shall refer to inutil-labs.com This Policy 
 
 Our website and our products may contain links and provide integrations to other sites and products of other organizations. We offer these links and integrations as a convenience to you; we do not operate, control or endorse these websites or products. It is your choice whether to utilize these links and integrations or not. These external websites and products are subject to their own privacy policies.
 
-**What kind of personal data does Kwes collect and how is it used?**
+**What kind of personal data does inUtil Labs collect and how is it used?**
 
 inUtil Labs collects personal data in three ways: Direct Collection, Third-Party Collection, and Passive Collection.
 
@@ -55,7 +55,7 @@ The personal information that we collect from you is used to:
     - Provide you with inUtil Labs' products and services
     - Log you into your account
     - Respond to your requests and questions
-    - Communicate upcoming Kwes events of interest or updates to our products and services
+    - Communicate upcoming inUtil Labs events of interest or updates to our products and services
     - Improve our products and services
     - Detect, prevent, and resolve security and technical issues
     - Fulfill the obligations outlined in the Services Agreement.
@@ -125,7 +125,7 @@ We are required to disclose personal information in response to lawful requests 
 
 When interacting with inUtil Labs, you choose what personal information and how much information to provide to us. Your choice may affect our ability to provide you with our products or services.
 
-**What about my personal data that was provided to Kwes by its users?**
+**What about my personal data that was provided to inUtil Labs by its users?**
 
 For information submitted through inUtil Labs' online products by our users, we do not own this data. Those individuals and businesses, using our product and services, are the owners (controllers) of the information that was provided to us.
 
@@ -159,6 +159,6 @@ An outside routing layer provides us with basic filtering against a denial of se
 ***Best Coding Practices***
 We use industry best practices in our applications backend development to ensure your account is secure. All developed code is deployed to production environment once thoroughly tested on our staging environment. Our agile deployment process allows us to rapidly update and patch our systems when needed.
 
-**How can I obtain additional information or ask questions about Kwes's privacy policies?**
+**How can I obtain additional information or ask questions about inUtil Lab' privacy policies?**
 
 inUtil Labs does its best to provide clear and transparent information and policies around our privacy and data sharing practices. For more information about our privacy practices or if you have questions, please contact us by email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
