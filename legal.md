@@ -8,7 +8,8 @@ title: Privacy Policy
 
 This Privacy Policy describes how your personal information is collected, used, or shared when you visit {{ site.title }} (the “Site”), or you make use of any of the services listed.
 
-Effective on December 9th, 2019, this Policy applies to inUtil Labs, LLC and its affiliated entities (collectively, "inUtil Labs' or "we" or "us' or "our.") Headquarters for inUtil Labs is located at Delaware, US.
+Effective on December 9th, 2019, this Policy applies to inUtil Labs, EIN 38-4250967, and its affiliated entities (collectively, "inUtil Labs' or "we" or "us' or "our"). Headquarters for inUtil Labs is located at 651 N Broad St Suite 201, Middletown, DE 19709 United States
+
 
 **PERSONAL INFORMATION WE COLLECT**
 
