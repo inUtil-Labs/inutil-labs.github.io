@@ -155,13 +155,13 @@ en: &DEFAULT_EN
 
   footer:
     legal: "Privacy Policy"
-    social:
-      - url: https://twitter.com/inUtil_Labs
-        icon: "fab fa-twitter"
-      - url: https://www.linkedin.com/company/inutil-labs/
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/inUtil-info
-        icon: "fab fa-github"
+#    social:
+#      - url: https://twitter.com/inUtil_Labs
+#        icon: "fab fa-twitter"
+#      - url: https://www.linkedin.com/company/inutil-labs/
+#        icon: "fab fa-linkedin-in"
+#      - url: https://github.com/inUtil-info
+#        icon: "fab fa-github"
 
 en-US:
   <<: *DEFAULT_EN
