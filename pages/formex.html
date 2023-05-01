@@ -3,9 +3,14 @@ layout: page
 title: Form Example
 permalink: /formex
 ---
-<link rel="stylesheet" href="../assts/css/formex.css">
-<script  src="../assets/js/formex.js"></script>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/formex.css">
+  <script src="{{ site.baseurl }}/assets/js/formex.js"></script>
+</head>
+<body>
 <form action="/submit-form" method="post" enctype="multipart/form-data">
   <div class="form-group">
     <label for="name">Name:</label>
@@ -32,3 +37,6 @@ permalink: /formex
   </div>
   <button type="submit">Submit</button>
 </form>
+
+</body>
+</html>
