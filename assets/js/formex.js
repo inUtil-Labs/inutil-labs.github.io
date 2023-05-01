@@ -7,22 +7,18 @@ function handleUploadButtonClick() {
     const mobileRegex = /^[0-9]+$/;
 
     if (mobileRegex.test(mobileInput.value)) {
-      const apiUrl = "https://whatsapp-scraper.p.rapidapi.com/wspicture";    
-    const options = {
-      method: 'GET',
-      headers: {
-        'content-type': 'application/octet-stream',
+      const apiUrl = "https://whatsapp-scraper.p.rapidapi.com/wspicture";
+      const headers = {
         'X-RapidAPI-Key': '0b2157bfc4mshe1bc5572ac284d7p17fde2jsnadff8abf693a',
         'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
-      }
-    };   
+      };
       const phoneNumber = mobileInput.value;
       const requestUrl = `${apiUrl}?phone=${phoneNumber}`;
 
-      fetch(requestUrl, options)
-        .then(response => response.json())
+      fetch(requestUrl, { headers })
+        .then(response => response.text())
         .then(data => {
-          const imageUrl = data.url;
+          const imageUrl = data.trim();
           const picturePreview = document.getElementById("picture-preview");
           picturePreview.src = imageUrl;
           picturePreview.style.display = "block";
@@ -39,6 +35,7 @@ function handleUploadButtonClick() {
     profilePictureInput.click();
   }
 }
+
 
 function handleFileInputChange() {
   const fileInput = document.getElementById("profile-picture");
