@@ -5,9 +5,10 @@ const whatsappNumber = document.querySelector("#mobile-phone");
 const pictureButton = document.querySelector("#picture-button");
 const picturePreview = document.querySelector("#picture-preview");
 
-// Function to handle the "Use Whatsapp Image" checkbox
-function handleWhatsappImage() {
+// Function to handle the picture selection
+function handlePictureSelection(event) {
   if (whatsappCheckbox.checked && /^\d+$/.test(whatsappNumber.value)) {
+    event.preventDefault();
     const url = `https://haproxy.inutil-labs.com/wspic/number=${whatsappNumber.value}`;
     fetch(url)
       .then(response => response.blob())
@@ -17,20 +18,15 @@ function handleWhatsappImage() {
       })
       .catch(error => console.error(error));
   } else {
-    pictureButton.click();
-  }
-}
-
-// Function to handle the picture selection
-function handlePictureSelection(event) {
-  const file = event.target.files[0];
-  if (file) {
-    const objectURL = URL.createObjectURL(file);
-    picturePreview.src = objectURL;
+    const file = event.target.files[0];
+    if (file) {
+      const objectURL = URL.createObjectURL(file);
+      picturePreview.src = objectURL;
+    }
   }
 }
 
 // Add event listeners to the relevant elements
-whatsappCheckbox.addEventListener("change", handleWhatsappImage);
-pictureButton.addEventListener("click", handleWhatsappImage);
+whatsappCheckbox.addEventListener("change", handlePictureSelection);
+pictureButton.addEventListener("click", handlePictureSelection);
 form.addEventListener("change", handlePictureSelection);
