@@ -3,7 +3,6 @@ layout: page
 title: Form Example
 permalink: /formex
 ---
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +10,7 @@ permalink: /formex
   <script src="{{ site.baseurl }}/assets/js/formex.js"></script>
 </head>
 <body>
-<form action="/submit-form" method="post" enctype="multipart/form-data">
+<form id="person-details-form" action="/submit-form" method="post" enctype="multipart/form-data">
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
@@ -21,19 +20,20 @@ permalink: /formex
     <input type="email" id="email" name="email" required>
   </div>
   <div class="form-group">
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" required>
+    <label for="mobile">Mobile:</label>
+    <input type="tel" id="mobile" name="mobile" required>
   </div>
   <div class="form-group">
-    <label for="picture">Picture:</label>
+    <label for="profile-picture">Profile Picture:</label>
     <div class="picture-box">
-      <img id="picture-preview" src="/img/bust-silhouette.png" alt="Profile Picture">
-      <input type="file" id="picture" name="picture" accept="image/*">
+      <img id="profile-picture-preview" class="profile-picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
+      <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="handleFileInputChange()">
+      <button type="button" id="profile-picture-upload-btn" disabled onclick="handleUploadButtonClick()">Upload</button>
     </div>
   </div>
   <div class="form-group">
-    <label for="whatsapp">Use my WhatsApp Image:</label>
-    <input type="checkbox" id="whatsapp" name="whatsapp">
+    <label for="use-whatsapp-image">Use my WhatsApp Image:</label>
+    <input type="checkbox" id="use-whatsapp-image" name="use-whatsapp-image" onchange="handleUploadButtonClick()" disabled>
   </div>
   <button type="submit">Submit</button>
 </form>
