@@ -2,8 +2,8 @@
 const form = document.querySelector("#person-details");
 const whatsappCheckbox = document.querySelector("#use-whatsapp-image");
 const whatsappNumber = document.querySelector("#mobile-phone");
-const fileInput = document.querySelector("#picture-upload");
-const previewImage = document.querySelector("#picture-preview");
+const pictureButton = document.querySelector("#picture-button");
+const picturePreview = document.querySelector("#picture-preview");
 
 // Function to handle the "Use Whatsapp Image" checkbox
 function handleWhatsappImage() {
@@ -12,24 +12,25 @@ function handleWhatsappImage() {
     fetch(url)
       .then(response => response.blob())
       .then(blob => {
-        previewImage.src = URL.createObjectURL(blob);
-        fileInput.value = null;
+        const objectURL = URL.createObjectURL(blob);
+        picturePreview.src = objectURL;
       })
       .catch(error => console.error(error));
   } else {
-    previewImage.src = "";
+    pictureButton.click();
   }
 }
 
-// Function to handle the file input
-function handleFileInput() {
-  const file = fileInput.files[0];
+// Function to handle the picture selection
+function handlePictureSelection(event) {
+  const file = event.target.files[0];
   if (file) {
-    previewImage.src = URL.createObjectURL(file);
+    const objectURL = URL.createObjectURL(file);
+    picturePreview.src = objectURL;
   }
 }
 
 // Add event listeners to the relevant elements
 whatsappCheckbox.addEventListener("change", handleWhatsappImage);
-whatsappNumber.addEventListener("input", handleWhatsappImage);
-fileInput.addEventListener("change", handleFileInput);
+pictureButton.addEventListener("click", handleWhatsappImage);
+form.addEventListener("change", handlePictureSelection);
