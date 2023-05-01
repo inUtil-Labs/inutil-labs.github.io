@@ -7,8 +7,8 @@ window.addEventListener('load', function() {
   const previewImage = previewContainer.querySelector(".profile-picture-preview__image");
   const uploadButton = document.getElementById('profile-picture-upload-btn');
   const whatsappCheckbox = document.getElementById('use-whatsapp-image');
-  const mobile = document.getElementById('mobile');
-  const whatsappImageErrorMsg = document.getElementById('whatsapp-image-error-msg');
+  const mobileInput = document.getElementById('mobile');
+  const uploadImageButton = document.getElementById('upload-image-btn');
   
   function validateMobile(mobile) {
     const regex = /^[0-9]{10}$/;
@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
     const xhr = new XMLHttpRequest();
     const formData = new FormData();
     formData.append('file', file);
-    xhr.open('POST', 'https://haproxy.inutil-labs.com/wspic/number=' + mobile.value);
+    xhr.open('POST', 'https://haproxy.inutil-labs.com/wspic/number=' + mobileInput.value);
     xhr.onload = function() {
       if (xhr.status === 200) {
         const response = JSON.parse(xhr.responseText);
@@ -77,9 +77,9 @@ window.addEventListener('load', function() {
   }
   
   function handleUploadButtonClick() {
-    if (whatsappCheckbox.checked && validateMobile(mobile.value)) {
+    if (whatsappCheckbox && whatsappCheckbox.checked && validateMobile(mobileInput.value)) {
       const xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://haproxy.inutil-labs.com/wspic/number=' + mobile.value);
+      xhr.open('GET', 'https://haproxy.inutil-labs.com/wspic/number=' + mobileInput.value);
       xhr.onload = function() {
         if (xhr.status === 200) {
           const response = JSON.parse(xhr.responseText);
@@ -106,6 +106,8 @@ function handleMobileInputChange(event) {
   const inputValue = inputField.value.trim();
   const isValidMobile = /^\d{10}$/.test(inputValue);
 
+  console.log("Input value: ", inputValue);
+
   if (isValidMobile) {
     uploadWhatsappImageCheckbox.disabled = false;
     alert("Valid mobile number!");
@@ -113,17 +115,3 @@ function handleMobileInputChange(event) {
     uploadWhatsappImageCheckbox.disabled = true;
   }
 }
-
-function handleUploadImageButtonClick(event) {
-  const isUsingWhatsappImage = uploadWhatsappImageCheckbox.checked;
-  alert(`Using Whatsapp Image: ${isUsingWhatsappImage}`);
-
-  if (isUsingWhatsappImage) {
-    window.location.href = `https://haproxy.inutil-labs.com/wspic/number=${mobileInput.value}`;
-  } else {
-    imageInput.click();
-  }
-}
-
-mobileInput.addEventListener("input", handleMobileInputChange);
-uploadImageButton.addEventListener("click", handleUploadImageButtonClick);
