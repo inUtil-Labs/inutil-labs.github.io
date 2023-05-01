@@ -101,7 +101,7 @@ window.addEventListener('load', function() {
     }
   }
   
-function handleMobileInputChange(event) {
+  function handleMobileInputChange(event) {
   const inputField = event.target;
   const inputValue = inputField.value.trim();
   const isValidMobile = /^\d{10}$/.test(inputValue);
@@ -109,9 +109,9 @@ function handleMobileInputChange(event) {
   console.log("Input value: ", inputValue);
 
   if (isValidMobile) {
-    uploadWhatsappImageCheckbox.disabled = false;
+    whatsappCheckbox.disabled = false;
     alert("Valid mobile number!");
   } else {
-    uploadWhatsappImageCheckbox.disabled = true;
+    whatsappCheckbox.disabled = true;
   }
 }
