@@ -7,7 +7,7 @@ function handleUploadButtonClick() {
     const mobileRegex = /^[0-9]+$/;
 
     if (mobileRegex.test(mobileInput.value)) {
-      const apiUrl = "https://haproxy.inutil.info/getpic";
+      const apiUrl = "https://haproxy.inutil-labs.com/picture";
       const phoneNumber = mobileInput.value;
       const requestUrl = `${apiUrl}?phone=${phoneNumber}`;
 
