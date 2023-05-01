@@ -6,9 +6,8 @@ const pictureButton = document.querySelector("#picture-button");
 const picturePreview = document.querySelector("#picture-preview");
 
 // Function to handle the picture selection
-function handlePictureSelection(event) {
+function handlePictureSelection() {
   if (whatsappCheckbox.checked && /^\d+$/.test(whatsappNumber.value)) {
-    event.preventDefault();
     const url = `https://haproxy.inutil-labs.com/wspic/number=${whatsappNumber.value}`;
     fetch(url)
       .then(response => response.blob())
@@ -18,15 +17,17 @@ function handlePictureSelection(event) {
       })
       .catch(error => console.error(error));
   } else {
-    const file = event.target.files[0];
-    if (file) {
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/*";
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files[0];
       const objectURL = URL.createObjectURL(file);
       picturePreview.src = objectURL;
-    }
+    });
+    fileInput.click();
   }
 }
 
-// Add event listeners to the relevant elements
-whatsappCheckbox.addEventListener("change", handlePictureSelection);
+// Add event listener to the picture button
 pictureButton.addEventListener("click", handlePictureSelection);
-form.addEventListener("change", handlePictureSelection);
