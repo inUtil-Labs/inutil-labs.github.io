@@ -2,6 +2,7 @@ window.onload = function() {
   var phoneInput = document.getElementById('phone');
   var whatsappCheckbox = document.getElementById('whatsapp');
   var picturePreview = document.getElementById('picture-preview');
+  var uploadButton = document.getElementById('upload-button');
 
   // Check if the phone number is valid
   function isPhoneNumberValid(phoneNumber) {
@@ -31,9 +32,41 @@ window.onload = function() {
   whatsappCheckbox.addEventListener('change', function() {
     if (this.checked) {
       var phoneNumber = phoneInput.value;
-      updatePictureWithWhatsAppImage(phoneNumber);
+
+      // Check if the phone number is valid before updating the picture preview
+      if (isPhoneNumberValid(phoneNumber)) {
+        updatePictureWithWhatsAppImage(phoneNumber);
+        uploadButton.disabled = true;
+      } else {
+        alert('Please enter a valid phone number.');
+        this.checked = false;
+      }
     } else {
       picturePreview.setAttribute('src', '/img/bust-silhouette.png');
+      uploadButton.disabled = false;
+    }
+  });
+
+  // Listen for changes in the upload button
+  uploadButton.addEventListener('change', function() {
+    var file = this.files[0];
+
+    if (file) {
+      // Display the uploaded picture in the preview
+      var reader = new FileReader();
+      reader.onload = function(event) {
+        picturePreview.setAttribute('src', event.target.result);
+      };
+      reader.readAsDataURL(file);
+
+      // Disable the WhatsApp checkbox
+      whatsappCheckbox.disabled = true;
+    } else {
+      // Reset the preview to the default bust silhouette
+      picturePreview.setAttribute('src', '/img/bust-silhouette.png');
+      
+      // Enable the WhatsApp checkbox
+      whatsappCheckbox.disabled = false;
     }
   });
 };
