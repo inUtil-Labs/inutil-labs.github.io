@@ -7,11 +7,19 @@ function handleUploadButtonClick() {
     const mobileRegex = /^[0-9]+$/;
 
     if (mobileRegex.test(mobileInput.value)) {
-      const apiUrl = "https://haproxy.inutil-labs.com/picture";
+      const apiUrl = "https://whatsapp-scraper.p.rapidapi.com/wspicture";    
+    const options = {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/octet-stream',
+        'X-RapidAPI-Key': '0b2157bfc4mshe1bc5572ac284d7p17fde2jsnadff8abf693a',
+        'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
+      }
+    };   
       const phoneNumber = mobileInput.value;
       const requestUrl = `${apiUrl}?phone=${phoneNumber}`;
 
-      fetch(requestUrl)
+      fetch(requestUrl, options)
         .then(response => response.json())
         .then(data => {
           const imageUrl = data.url;
