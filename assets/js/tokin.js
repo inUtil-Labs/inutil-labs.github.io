@@ -5,7 +5,7 @@ const form = document.getElementById('stepByStepForm')
 const dots = document.getElementsByClassName('progress-bar__dot')
 const numberOfSteps = 3
 let currentStep = 1
-
+console.log("JS file loaded");
 for(let i = 0 ; i < dots.length ; ++i){
   dots[i].addEventListener('click', ()=>{
     goToStep(i+1) 
