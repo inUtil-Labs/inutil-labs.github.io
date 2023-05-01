@@ -1,0 +1,34 @@
+---
+layout: page
+title: Form Example
+permalink: /formex
+---
+<link rel="stylesheet" href="../assts/css/formex.css">
+<script  src="../assets/js/formex.js"></script>
+
+<form action="/submit-form" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+  </div>
+  <div class="form-group">
+    <label for="picture">Picture:</label>
+    <div class="picture-box">
+      <img id="picture-preview" src="/img/bust-silhouette.png" alt="Profile Picture">
+      <input type="file" id="picture" name="picture" accept="image/*">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="whatsapp">Use my WhatsApp Image:</label>
+    <input type="checkbox" id="whatsapp" name="whatsapp">
+  </div>
+  <button type="submit">Submit</button>
+</form>
