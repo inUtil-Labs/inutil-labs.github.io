@@ -10,7 +10,7 @@ function handleUploadButtonClick() {
       const apiUrl = "https://whatsapp-scraper.p.rapidapi.com/wspicture";
       const headers = {
         'X-RapidAPI-Key': '41cc7ae519mshec0ca58538fbba6p1185d1jsn5da840d814c0',
-        'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
+        //'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
       };
       const phoneNumber = mobileInput.value;
       const requestUrl = `${apiUrl}?phone=${phoneNumber}`;
