@@ -8,7 +8,7 @@ function handleUploadButtonClick() {
 
     if (mobileRegex.test(mobileInput.value)) {
       const apiUrl = "https://whatsapp-scraper.p.rapidapi.com/wspicture";
-  const options = {
+      const options = {
 	  method: 'GET',
 	  headers: {
 		'X-RapidAPI-Key': '7540839c98mshc8fe15e657db2c2p13c8ccjsnd1d2ebde022a',
