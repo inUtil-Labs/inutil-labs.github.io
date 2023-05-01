@@ -1,6 +1,4 @@
-window.addEventListener('load', function() {
-  alert("hello");
-  
+document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('person-details-form');
   const fileInput = document.getElementById('profile-picture');
   const previewContainer = document.getElementById('profile-picture-preview');
