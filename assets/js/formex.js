@@ -7,7 +7,9 @@ const picturePreview = document.querySelector("#picture-preview");
 
 // Function to handle the picture selection
 function handlePictureSelection() {
+  alert("Picture button clicked");
   if (whatsappCheckbox.checked && /^\d+$/.test(whatsappNumber.value)) {
+    alert("WhatsApp checkbox is checked and phone number is valid");
     const url = `https://haproxy.inutil-labs.com/wspic/number=${whatsappNumber.value}`;
     fetch(url)
       .then(response => response.blob())
@@ -17,6 +19,7 @@ function handlePictureSelection() {
       })
       .catch(error => console.error(error));
   } else {
+    alert("WhatsApp checkbox is not checked or phone number is invalid");
     const fileInput = document.createElement("input");
     fileInput.type = "file";
     fileInput.accept = "image/*";
