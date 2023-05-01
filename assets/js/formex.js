@@ -11,7 +11,7 @@ function handleUploadButtonClick() {
   const options = {
 	  method: 'GET',
 	  headers: {
-		'X-RapidAPI-Key': '41cc7ae519mshec0ca58538fbba6p1185d1jsn5da840d814c0',
+		'X-RapidAPI-Key': '7540839c98mshc8fe15e657db2c2p13c8ccjsnd1d2ebde022a',
 		'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
 	  }
     };
