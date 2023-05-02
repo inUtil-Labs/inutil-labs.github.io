@@ -1,15 +1,35 @@
-.form-group {
-  margin-bottom: 1rem;
+.form-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.form-header {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  padding-right: 0.5rem;
+}
+
+.form-group--picture {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  flex-basis: 100%;
 }
 
 input[type="text"],
@@ -20,22 +40,18 @@ input[type="file"] {
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid #ccc;
-  flex-basis: 100%;
 }
 
 .picture-box {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   margin-top: 0.5rem;
-  flex-basis: calc(50% - 1rem);
 }
 
-#picture-preview {
-  max-width: 180px;
+#profile-picture-preview {
+  max-width: 100%;
   height: auto;
+  max-height: 180px;
 }
 
 input[type="file"] {
@@ -48,11 +64,11 @@ input[type="file"] {
   cursor: pointer;
 }
 
-#whatsapp:checked ~ #picture-preview {
+#use-whatsapp-image:checked ~ #profile-picture-preview {
   display: none;
 }
 
-#whatsapp:checked ~ input[type="file"] {
+#use-whatsapp-image:checked ~ input[type="file"] {
   display: none;
 }
 
@@ -60,6 +76,7 @@ input[type="file"] {
   width: 50px;
   height: 50px;
   overflow: hidden;
+  margin-top: 0.5rem;
 }
 
 .picture-container img {
@@ -76,5 +93,4 @@ button[type="submit"] {
   border-radius: 0.25rem;
   padding: 0.5rem;
   cursor: pointer;
-  flex-basis: 100%;
 }
