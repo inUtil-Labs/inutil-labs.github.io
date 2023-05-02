@@ -1,35 +1,15 @@
-.form-container {
+.form-group {
+  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
-}
-
-.form-header {
-  flex-basis: 100%;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.form-group {
-  flex-basis: 50%;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  padding-right: 0.5rem;
-}
-
-.form-group--picture {
-  flex-basis: 50%;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  padding-left: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  flex-basis: 100%;
 }
 
 input[type="text"],
@@ -40,23 +20,23 @@ input[type="file"] {
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid #ccc;
+  flex-basis: 100%;
 }
 
 .picture-box {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 0.5rem;
+  flex-basis: calc(50% - 1rem);
 }
 
-#profile-picture-preview {
+#picture-preview {
   max-width: 180px;
-  max-height: 180px;
-  display: block;
-  margin: 0 auto 1rem;
-  border-radius: 50%;
-  object-fit: cover;
+  height: auto;
 }
-
 
 input[type="file"] {
   position: absolute;
@@ -68,11 +48,11 @@ input[type="file"] {
   cursor: pointer;
 }
 
-#use-whatsapp-image:checked ~ #profile-picture-preview {
+#whatsapp:checked ~ #picture-preview {
   display: none;
 }
 
-#use-whatsapp-image:checked ~ input[type="file"] {
+#whatsapp:checked ~ input[type="file"] {
   display: none;
 }
 
@@ -80,7 +60,6 @@ input[type="file"] {
   width: 50px;
   height: 50px;
   overflow: hidden;
-  margin-top: 0.5rem;
 }
 
 .picture-container img {
@@ -97,4 +76,5 @@ button[type="submit"] {
   border-radius: 0.25rem;
   padding: 0.5rem;
   cursor: pointer;
+  flex-basis: 100%;
 }
