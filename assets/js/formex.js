@@ -73,8 +73,8 @@ function handleUploadButtonClick() {
           const picturePreview = document.getElementById("profile-picture-preview");
           picturePreview.src = imageUrl;
           picturePreview.style.display = "block";
-          picturePreview.style.width = "50px";
-          picturePreview.style.height = "50px";
+          picturePreview.style.width = "240px";
+          picturePreview.style.height = "240px";
         })
         .catch(error => {
           alert("Error fetching image: " + error);
