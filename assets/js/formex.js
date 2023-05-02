@@ -45,6 +45,8 @@ function handleUploadButtonClick() {
 }
 */
 
+/*
+
 function handleUploadButtonClick() {
   const useWhatsappImage = document.getElementById("use-whatsapp-image").checked;
   const mobileInput = document.getElementById("mobile");
@@ -111,5 +113,60 @@ form.addEventListener("submit", event => {
   event.preventDefault();
   handleUploadButtonClick();
 });
+*/
+
+function handleFileInputChange() {
+  const fileInput = document.querySelector('#profile-picture');
+  const previewImage = document.querySelector('#profile-picture-preview');
+  const pictureContainer = document.querySelector('#picture-container');
+  const uploadButton = document.querySelector('#profile-picture-upload-btn');
+  const useWhatsappCheckbox = document.querySelector('#use-whatsapp-image');
+
+  const file = fileInput.files[0];
+
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+
+  reader.onload = function (event) {
+    previewImage.src = event.target.result;
+    pictureContainer.innerHTML = '';
+    uploadButton.disabled = false;
+    useWhatsappCheckbox.checked = false;
+    useWhatsappCheckbox.disabled = false;
+  };
+}
+
+function handleUploadButtonClick() {
+  const fileInput = document.querySelector('#profile-picture');
+  const pictureContainer = document.querySelector('#picture-container');
+  const uploadButton = document.querySelector('#profile-picture-upload-btn');
+  const useWhatsappCheckbox = document.querySelector('#use-whatsapp-image');
+
+  const file = fileInput.files[0];
+
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+
+  reader.onload = function (event) {
+    const img = document.createElement('img');
+    img.src = event.target.result;
+    pictureContainer.innerHTML = '';
+    pictureContainer.appendChild(img);
+    uploadButton.disabled = true;
+    useWhatsappCheckbox.disabled = true;
+  };
+}
+
+function handleCheckboxChange() {
+  const uploadButton = document.querySelector('#profile-picture-upload-btn');
+  if (this.checked) {
+    uploadButton.style.display = 'none';
+  } else {
+    uploadButton.style.display = 'block';
+  }
+}
+
+const useWhatsappCheckbox = document.querySelector('#use-whatsapp-image');
+useWhatsappCheckbox.addEventListener('change', handleCheckboxChange);
 
 
