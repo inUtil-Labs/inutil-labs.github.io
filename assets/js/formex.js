@@ -44,7 +44,6 @@ function handleUploadButtonClick() {
   }
 }
 */
-
 function handleUploadButtonClick() {
   const useWhatsappImage = document.getElementById("use-whatsapp-image").checked;
   const mobileInput = document.getElementById("mobile");
@@ -56,28 +55,28 @@ function handleUploadButtonClick() {
     if (mobileRegex.test(mobileInput.value)) {
       const apiUrl = "https://whatsapp-scraper.p.rapidapi.com/wspicture";
       const options = {
-        method: 'GET',
-        headers: {
-          'X-RapidAPI-Key': '7540839c98mshc8fe15e657db2c2p13c8ccjsnd1d2ebde022a',
-          'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
-        }
+          method: 'GET',
+          headers: {
+              'X-RapidAPI-Key': '7540839c98mshc8fe15e657db2c2p13c8ccjsnd1d2ebde022a',
+              'X-RapidAPI-Host': 'whatsapp-scraper.p.rapidapi.com'
+          }
       };
       const phoneNumber = mobileInput.value;
       const requestUrl = `${apiUrl}?phone=${phoneNumber}`;
 
       fetch(requestUrl, options)
-        .then(response => response.text())
-        .then(data => {
+      .then(response => response.text())
+      .then(data => {
           const imageUrl = data.trim();
           const picturePreview = document.getElementById("profile-picture-preview");
           picturePreview.src = imageUrl;
           picturePreview.style.display = "block";
           picturePreview.style.width = "250px";
           picturePreview.style.height = "250px";
-        })
-        .catch(error => {
+      })
+      .catch(error => {
           alert("Error fetching image: " + error);
-        });
+      });
 
     } else {
       alert("Invalid phone number format. Please enter numbers only.");
@@ -112,18 +111,21 @@ form.addEventListener("submit", event => {
   handleUploadButtonClick();
 });
 
-const useWhatsappImageCheckbox = document.getElementById("use-whatsapp-image");
-useWhatsappImageCheckbox.addEventListener("change", () => {
-  const profilePicturePreview = document.getElementById("profile-picture-preview");
-  const mobileInput = document.getElementById("mobile");
-
-  if (useWhatsappImageCheckbox.checked) {
-    profilePicturePreview.style.display = "none";
-    mobileInput.disabled = false;
+const useWhatsappImage = document.getElementById("use-whatsapp-image");
+useWhatsappImage.addEventListener("change", event => {
+  const uploadButton = document.getElementById("upload-button");
+  if (useWhatsappImage.checked) {
+    uploadButton.textContent = "Fetch from WhatsApp";
   } else {
-    profilePicturePreview.style.display = "block";
-    mobileInput.disabled = true;
+    uploadButton.textContent = "Browse Computer";
   }
 });
+
+const uploadButton = document.getElementById("upload-button");
+uploadButton.addEventListener("click", event => {
+  event.preventDefault();
+  handleUploadButtonClick();
+});
+
 
 
