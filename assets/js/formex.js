@@ -19,18 +19,19 @@ function handleUploadButtonClick() {
       const requestUrl = `${apiUrl}?phone=${phoneNumber}`;
 
       fetch(requestUrl, options)
-        .then(response => response.text())
-        .then(data => {
-          const imageUrl = data.trim();
-          const picturePreview = document.getElementById("picture-preview");
-          picturePreview.src = imageUrl;
-          picturePreview.style.display = "block";
-          picturePreview.style.width = "50px";
-          picturePreview.style.height = "50px";
-        })
-        .catch(error => {
-          alert("Error fetching image: " + error);
-        });
+  	.then(response => response.text())
+  	.then(data => {
+   	 const imageUrl = data.trim();
+    	const picturePreview = document.getElementById("picture-preview");
+   	 picturePreview.src = imageUrl;
+   	 picturePreview.style.display = "block";
+   	 picturePreview.style.width = "50px";
+   	 picturePreview.style.height = "50px";
+ 	 })
+ 	 .catch(error => {
+	    alert("Error fetching image: " + error);
+	  });
+
     } else {
       alert("Invalid phone number format. Please enter numbers only.");
     }
