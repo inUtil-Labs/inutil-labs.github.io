@@ -22,7 +22,7 @@ function handleUploadButtonClick() {
   	.then(response => response.text())
   	.then(data => {
    	 const imageUrl = data.trim();
-    	const picturePreview = document.getElementById("picture-preview");
+    	const picturePreview = document.getElementById("profile-picture-preview");
    	 picturePreview.src = imageUrl;
    	 picturePreview.style.display = "block";
    	 picturePreview.style.width = "50px";
@@ -46,7 +46,7 @@ function handleFileInputChange() {
   const file = fileInput.files[0];
 
   if (file) {
-    const picturePreview = document.getElementById("picture-preview");
+    const picturePreview = document.getElementById("profile-picture-preview");
 
     const reader = new FileReader();
     reader.onload = function(event) {
