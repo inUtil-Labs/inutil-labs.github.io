@@ -3,22 +3,16 @@ layout: page
 title: Form Example
 permalink: /formex
 ---
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/formex.css">
-  <script src="{{ site.baseurl }}/assets/js/formex.js"></script>
-</head>
-<body>
-  <div class="form-container">
-    <div class="form-header">
-      <div class="picture-box">
-        <img id="picture-preview" class="picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
-        <input type="file" id="picture" name="picture" accept="image/*" onchange="handleFileInputChange()">
-        <button type="button" id="upload-btn" onclick="handleUploadButtonClick()">Upload</button>
-      </div>
-      <div class="form-title">Person Details</div>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Person Record Form</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  </head>
+  <body>
+    <h1>Person Record Form</h1>
     <form id="person-details-form" action="/submit-form" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="name">Name:</label>
@@ -33,8 +27,16 @@ permalink: /formex
         <input type="tel" id="mobile" name="mobile" required>
       </div>
       <div class="form-group">
+        <label for="profile-picture">Profile Picture:</label>
+        <div class="picture-box">
+          <img id="profile-picture-preview" class="profile-picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
+          <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="handleFileInputChange()">
+          <button type="button" id="profile-picture-upload-btn" disabled onclick="handleUploadButtonClick()">Upload</button>
+        </div>
+      </div>
+      <div class="form-group">
         <label>
-          <input type="checkbox" id="whatsapp" name="whatsapp" onchange="handleUploadButtonClick()"> Use WhatsApp image
+          <input type="checkbox" id="use-whatsapp-image" name="use_whatsapp_image" onchange="handleUseWhatsAppImageChange()"> Use WhatsApp image
         </label>
       </div>
       <div class="form-group">
@@ -43,6 +45,6 @@ permalink: /formex
       </div>
       <button type="submit">Submit</button>
     </form>
-  </div>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   </body>
 </html>
