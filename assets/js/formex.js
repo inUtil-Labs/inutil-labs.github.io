@@ -142,20 +142,25 @@ function handleUploadButtonClick() {
   const uploadButton = document.querySelector('#profile-picture-upload-btn');
   const useWhatsappCheckbox = document.querySelector('#use-whatsapp-image');
 
-  const file = fileInput.files[0];
-
-  const reader = new FileReader();
-  reader.readAsDataURL(file);
-
-  reader.onload = function (event) {
-    const img = document.createElement('img');
-    img.src = event.target.result;
-    pictureContainer.innerHTML = '';
-    pictureContainer.appendChild(img);
-    uploadButton.disabled = true;
-    useWhatsappCheckbox.disabled = true;
-  };
+  if (useWhatsappCheckbox.checked) {
+    // do something for WhatsApp image
+  } else {
+    const file = fileInput.files[0];
+  
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+  
+    reader.onload = function (event) {
+      const img = document.createElement('img');
+      img.src = event.target.result;
+      pictureContainer.innerHTML = '';
+      pictureContainer.appendChild(img);
+      uploadButton.disabled = true;
+      useWhatsappCheckbox.disabled = true;
+    };
+  }
 }
+
 
 function handleCheckboxChange() {
   const uploadButton = document.querySelector('#profile-picture-upload-btn');
