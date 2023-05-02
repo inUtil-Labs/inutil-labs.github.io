@@ -113,26 +113,17 @@ form.addEventListener("submit", event => {
 });
 
 const useWhatsappImageCheckbox = document.getElementById("use-whatsapp-image");
-useWhatsappImageCheckbox.addEventListener("change", event => {
-  const picturePreview = document.getElementById("profile-picture-preview");
-  const fileInput = document.getElementById("profile-picture");
+useWhatsappImageCheckbox.addEventListener("change", () => {
+  const profilePicturePreview = document.getElementById("profile-picture-preview");
+  const mobileInput = document.getElementById("mobile");
 
   if (useWhatsappImageCheckbox.checked) {
-    picturePreview.style.display = "none";
-    fileInput.style.display = "none";
+    profilePicturePreview.style.display = "none";
+    mobileInput.disabled = false;
   } else {
-    picturePreview.style.display = "block";
-    fileInput.style.display = "block";
+    profilePicturePreview.style.display = "block";
+    mobileInput.disabled = true;
   }
 });
 
-const profilePictureUploadButton = document.getElementById("profile-picture-upload");
-profilePictureUploadButton.addEventListener("click", event => {
-  const useWhatsappImage = document.getElementById("use-whatsapp-image").checked;
-
-  if (!useWhatsappImage) {
-    const profilePictureInput = document.getElementById("profile-picture");
-    profilePictureInput.click();
-  }
-});
 
