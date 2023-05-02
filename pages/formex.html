@@ -6,41 +6,43 @@ permalink: /formex
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/person-form.css">
-  <script src="{{ site.baseurl }}/assets/js/person-form.js"></script>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/formex.css">
+  <script src="{{ site.baseurl }}/assets/js/formex.js"></script>
 </head>
 <body>
-<form id="person-details-form" action="/submit-form" method="post" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div class="form-group">
-    <label for="mobile">Mobile:</label>
-    <input type="tel" id="mobile" name="mobile" required>
-  </div>
-  <div class="form-group">
-    <label for="profile-picture">Profile Picture:</label>
-    <div class="picture-box">
-      <img id="profile-picture-preview" class="profile-picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
-      <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="handleFileInputChange()">
-      <button type="button" id="profile-picture-upload-btn" disabled onclick="handleUploadButtonClick()">Upload</button>
+  <div class="form-container">
+    <div class="form-header">
+      <div class="picture-box">
+        <img id="picture-preview" class="picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
+        <input type="file" id="picture" name="picture" accept="image/*" onchange="handleFileInputChange()">
+        <button type="button" id="upload-btn" disabled onclick="handleUploadButtonClick()">Upload</button>
+      </div>
+      <div class="form-title">Person Details</div>
     </div>
+    <form id="person-details-form" action="/submit-form" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="whatsapp" name="whatsapp" onchange="handleUploadButtonClick()"> Use WhatsApp image
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="picture-container">Picture Container:</label>
+        <div id="picture-container"></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </div>
-  <div class="form-group">
-    <label>
-      <input type="checkbox" id="use-whatsapp-image" name="use_whatsapp_image" onchange="handleUploadButtonClick()"> Use WhatsApp image
-    </label>
-  </div>
-  <div class="form-group">
-    <label for="picture-container">Picture Container:</label>
-    <div id="picture-container"></div>
-  </div>
-  <button type="submit">Submit</button>
-</form>
 </body>
 </html>
