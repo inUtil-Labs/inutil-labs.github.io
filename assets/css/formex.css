@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 800px; /* increase the max-width to accommodate the image */
+  max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
   background-color: #fff;
@@ -16,19 +16,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* center the container horizontally */
-  align-items: flex-start; /* align the container items to the top */
+  justify-content: space-between;
 }
 
 
 
 .form-group {
   margin-bottom: 1rem;
-  flex-basis: calc(50% - 1rem);
+  flex-basis: calc(50% - 0.5rem); /* adjust the width of the form group */
   box-sizing: border-box;
-  padding-right: 1rem;
+  padding-right: 1rem; /* add right padding to give space between form-group and picture-box */
 }
-
 
 .form-group input[type="file"] {
   width: auto;
@@ -61,7 +59,7 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   margin-top: 0.5rem;
-  flex-basis: calc(50% - 1rem);
+  flex-basis: calc(50% - 1.5rem); /* adjust the width of the picture-box */
 }
 
 .picture-box img {
