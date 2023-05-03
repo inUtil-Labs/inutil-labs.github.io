@@ -16,9 +16,11 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* center the container horizontally */
+  justify-content: space-between; /* center the container horizontally */
   align-items: flex-start; /* align the container items to the top */
 }
+
+
 
 .form-group {
   margin-bottom: 1rem;
@@ -26,6 +28,13 @@ body {
   box-sizing: border-box;
   padding-right: 1rem;
 }
+
+
+.form-group input[type="file"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
 
 label {
   display: block;
