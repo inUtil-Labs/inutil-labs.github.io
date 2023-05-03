@@ -182,9 +182,3 @@ function handleFileInputChange() {
     reader.readAsDataURL(file);
   }
 }
-
-const form = document.getElementById("person-details-form");
-form.addEventListener("submit", event => {
-  event.preventDefault();
-  handleUploadButtonClick();
-});
