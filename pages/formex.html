@@ -12,7 +12,7 @@ permalink: /formex
 </head>
 <body>
   <form id="person-details-form" action="/submit-form" method="post" enctype="multipart/form-data">
-  <div class="form-group row">
+  <div class="row">
     <div class="col-md-6">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -22,19 +22,24 @@ permalink: /formex
       
       <label for="mobile">Mobile:</label>
       <input type="tel" id="mobile" name="mobile" required>
-      
-      <div class="picture-box" style="float: right;">
-        <img id="profile-picture-preview" class="picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
+    </div>
+    <div class="col-md-6">
+      <div class="picture-box">
+        <img id="profile-picture-preview" class="picture-preview__image" src="/img/bust.jpg" alt="Profile Picture">
         <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="handleFileInputChange()">
         <button type="button" id="profile-picture-upload-btn" disabled onclick="handleUploadButtonClick()">Upload</button>
       </div>
     </div>
+  </div>
+  <div class="row">
     <div class="col-md-6">
       <div class="form-group">
         <label>
           <input type="checkbox" id="use-whatsapp-image" name="use_whatsapp_image" onchange="handleUploadButtonClick()"> Use WhatsApp image
         </label>
       </div>
+    </div>
+    <div class="col-md-6">
       <div class="form-group">
         <label for="picture-container">Picture Container:</label>
         <div id="picture-container"></div>
@@ -43,6 +48,7 @@ permalink: /formex
   </div>
   <button type="submit">Submit</button>
 </form>
+
 
 </body>
 </html>
