@@ -114,6 +114,13 @@ form.addEventListener("submit", event => {
   handleUploadButtonClick();
 });
 */
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("person-details-form");
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    handleUploadButtonClick();
+  });
+});
 
 function handleUploadButtonClick() {
   const useWhatsappImage = document.getElementById("use-whatsapp-image").checked;
