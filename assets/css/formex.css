@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -10,21 +8,23 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px; /* increase the max-width to accommodate the image */
   margin: 0 auto;
   padding: 1rem;
   background-color: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;  
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center the container horizontally */
+  align-items: flex-start; /* align the container items to the top */
 }
 
 .form-group {
   margin-bottom: 1rem;
-  flex-basis: calc(50% - 1rem); 
-  box-sizing: border-box; 
-  padding-right: 1rem; /* add right padding to give space between form-group and picture-box */
+  flex-basis: calc(50% - 1rem);
+  box-sizing: border-box;
+  padding-right: 1rem;
 }
 
 label {
@@ -46,8 +46,7 @@ input[type="file"] {
   margin-right: 1rem;
 }
 
- 
-  .picture-box {
+.picture-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +87,7 @@ input[type="file"] {
   width: 50px;
   height: 50px;
   overflow: hidden;
-  margin-top: 0.5rem; /* add top margin to align with picture-box */
+  margin-top: 0.5rem;
 }
 
 .picture-container img {
