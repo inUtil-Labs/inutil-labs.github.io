@@ -1,0 +1,43 @@
+---
+layout: page
+title: Form Example
+permalink: /formex
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/formex.css">
+  <script src="{{ site.baseurl }}/assets/js/formex.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="person-details-form" action="/submit-form" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+      <div class="picture-box">
+        <img id="profile-picture-preview" class="picture-preview__image" src="/img/bust-silhouette.png" alt="Profile Picture">
+        <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="handleFileInputChange()">
+        <button type="button" id="profile-picture-upload-btn" disabled onclick="handleUploadButtonClick()">Upload</button>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="use-whatsapp-image" name="use_whatsapp_image" onchange="handleUploadButtonClick()"> Use WhatsApp image
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="picture-container">Picture Container:</label>
+        <div id="picture-container"></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
