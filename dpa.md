@@ -9,7 +9,7 @@ title: Data Processing Addendum
 This Data Processing Addendum (DPA) and its applicable Exhibits apply to the Processing of Personal Data by inUtil Labs on behalf of Client (Client Personal Data) subject to the General Data Protection Regulation 2016/679 (GDPR) or any other data protection laws in order to provide services (Services) pursuant to the Agreement between Client and inUtil Labs. This DPA is incorporated into the Agreement.
 
 
-**Proceso de datos**
+**Processing data**
 
 {% if site.analytics.google %}
 
@@ -18,53 +18,50 @@ Automatically Collected (Google Analytics):
 
 {% else %}
 
-Este Acuerdo de procesamiento de datos (en adelante, "DPA") se celebra entre XXX (en adelante, el "Cliente") e inUtil Labs Inc (en adelante, el "Encargado") con fecha efectiva a partir de la fecha de firma del presente documento.
-
+This Data Processing Agreement ("DPA") is entered into between XXX (hereinafter referred to as the "Client") and inUtil Labs Inc (hereinafter referred to as the "Processor") effective as of the date of signing this document.
 
 {% endif %}
 
-**Objeto del acuerdo**
+**Purpose of the Agreement**
 
-El Cliente contrata al Encargado para que preste servicios de procesamiento de datos personales en su nombre y para su cuenta en relación con el envío y recepción de mensajes en la red de WhatsApp de los clientes de XXXXXXX.
+The Client engages the Processor to provide personal data processing services on its behalf and for its account in relation to sending and receiving messages on the WhatsApp network of XXXXXXX's clients.
 
-El Encargado prestará los servicios a través de su infraestructura de pasarela de mensajes, sin almacenar los datos personales y custodiando las credenciales necesarias para actuar en nombre del Cliente en la red de WhatsApp. Las credenciales no serán utilizables fuera de la infraestructura del Encargado ante una brecha de seguridad.
+The Processor will provide the services through its message gateway infrastructure, without storing personal data and safeguarding the credentials necessary to act on behalf of the Client on the WhatsApp network. The credentials will not be usable outside the Processor's infrastructure in the event of a security breach.
 
+**Processor's Obligations**
 
-**Obligaciones del encargado**
+The Processor agrees to:
 
-El Encargado se compromete a:
+a) Process personal data only to the extent necessary for the provision of services and in compliance with the Client's instructions.
 
-a) Procesar los datos personales únicamente en la medida necesaria para la prestación de los servicios y en cumplimiento con las instrucciones del Cliente.
+b) Provide the necessary infrastructure for the processing of personal data and ensure its security.
 
-b) Proporcionar la infraestructura necesaria para el procesamiento de datos personales y garantizar su seguridad.
+c) Ensure that its personnel are properly trained in the protection of personal data and confidentiality.
 
-c) Garantizar que su personal esté debidamente capacitado en materia de protección de datos personales y confidencialidad.
+d) Take all necessary technical and organizational measures to ensure the security of personal data.
 
-d) Tomar todas las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales.
+e) Notify the Client promptly and in full about any security breaches that affect personal data.
 
-e) Notificar al Cliente sin demora y de manera completa sobre cualquier violación de seguridad que afecte a los datos personales.
+f) Assist the Client in fulfilling its obligations to respond to requests from data subjects and cooperate with data protection authorities as necessary.
 
-f) Ayudar al Cliente a cumplir con sus obligaciones de responder a las solicitudes de derechos de los interesados y cooperar con las autoridades de protección de datos en la medida necesaria.
+g) Ensure that personal data is deleted or returned to the Client at the end of the service provision, unless their retention is required by applicable law.
 
-g) Garantizar que los datos personales sean eliminados o devueltos al Cliente al final de la prestación de servicios, a menos que se requiera su conservación en virtud de la legislación aplicable.
+**Client's Obligations**
 
-**Obligaciones del Cliente**
+The Client agrees to:
 
-El Cliente se compromete a:
+a) Provide clear and detailed instructions to the Processor regarding the processing of personal data.
 
-a) Proporcionar al Encargado instrucciones claras y detalladas sobre el procesamiento de datos personales.
+b) Ensure that the personal data provided to the Processor is accurate and up-to-date.
 
-b) Garantizar que los datos personales proporcionados al Encargado sean precisos y actualizados.
+c) Ensure that it has the consent of the data subjects for their personal data to be processed by the Processor in accordance with this DPA.
 
-c) Garantizar que cuenta con el consentimiento de los titulares de los datos personales para que sean procesados por el Encargado en los términos descritos en el presente DPA.
+d) Comply with all applicable obligations of data controllers under applicable law.
 
-d) Cumplir con todas las obligaciones aplicables a los responsables del tratamiento de datos personales en virtud de la legislación aplicable.
+**Duration of the DPA**
 
-**Duración del DPA**
+This DPA shall remain in effect for the duration of the Processor's provision of services to the Client.
 
-El presente DPA estará vigente durante el tiempo que dure la prestación de los servicios por parte del Encargado al Cliente.
+**Applicable Law**
 
-**Ley aplicable**
-
-El presente DPA se regirá e interpretará de acuerdo con las leyes de la Unión Europea, incluyendo el Reglamento General de Protección de Datos ("GDPR"). 
-
+This DPA shall be governed and interpreted in accordance with the laws of the European Union, including the General Data Protection Regulation ("GDPR").

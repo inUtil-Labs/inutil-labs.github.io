@@ -47,34 +47,34 @@ inUtil Labs collects personal data in three ways: Direct Collection, Third-Party
 
 We collect your personal information directly from you when you register to use inUtil Labs' products and services, when you contact us via our website contact form, when you submit an online support ticket, when you sent us email or mail, when you sign-up online for our newsletter, or when you apply for a job. We may collect the following personal information from you:
 
-    - Contact data, such as name, email, phone number
-    - Business data, such as company name, business type, department, title, business email, business phone number, products that you use
-    - Payment data, such as invoice information or credit card payment information.
+- Contact data, such as name, email, phone number
+- Business data, such as company name, business type, department, title, business email, business phone number, products that you use
+- Payment data, such as invoice information or credit card payment information.
 
 The personal information that we collect from you is used to:
 
-    - Provide you with inUtil Labs' products and services
-    - Log you into your account
-    - Respond to your requests and questions
-    - Communicate upcoming inUtil Labs events of interest or updates to our products and services
-    - Improve our products and services
-    - Detect, prevent, and resolve security and technical issues
-    - Fulfill the obligations outlined in the Services Agreement.
+- Provide you with inUtil Labs' products and services
+- Log you into your account
+- Respond to your requests and questions
+- Communicate upcoming inUtil Labs events of interest or updates to our products and services
+- Improve our products and services
+- Detect, prevent, and resolve security and technical issues
+- Fulfill the obligations outlined in the Services Agreement.
 
 ***Third-Party Collection and Use***
 
 We may collect personal information about you from publicly available databases, business partners, or other third-parties. This information may include:
 
-    - Contact data, such as name, email, phone number
-    - Demographic data, such as age, gender, interests
-    - Business data, such as company name, business type, department, title, business email, business phone number, products that you use
+- Contact data, such as name, email, phone number
+- Demographic data, such as age, gender, interests
+- Business data, such as company name, business type, department, title, business email, business phone number, products that you use
 
 This information is used to:
 
-    - Identify new customers
-    - Provide you information on our products and services that may be of interest to you
-    - Provide us information on the usability of our website
-    - Combine supplemental data with information we already have about you
+- Identify new customers
+- Provide you information on our products and services that may be of interest to you
+- Provide us information on the usability of our website
+- Combine supplemental data with information we already have about you
 
 If you would like to know if we have your personal data via third-party collection, please contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 
@@ -82,14 +82,14 @@ If you would like to know if we have your personal data via third-party collecti
 
 Like most companies, we collect limited personal information from visitors to our website and users of our products and services. This information may include:
 
-    - IP Address
-    - Browser Type
-    - Internet Service Provider Address
-    - Referring pages
-    - HTML pages, graphics, or other files viewed on our site
-    - Operating systems
-    - Date/time stamp
-    - Clickstream data
+- IP Address
+- Browser Type
+- Internet Service Provider Address
+- Referring pages
+- HTML pages, graphics, or other files viewed on our site
+- Operating systems
+- Date/time stamp
+- Clickstream data
 
 We may use cookies, web beacons and other means to do so.
 
@@ -115,10 +115,10 @@ inUtil Labs does not have offices in the EU or Switzerland.
 
 inUtil Labs may share or disclose personal data under certain circumstances. We may disclose or share your personal information when:
 
-    - We need to share personal information with third parties to provide you with the inUtil Labs products and services that you request
-    - We work with entities affiliated by inUtil Labs
-    - You ask that we share your personal information with a third party
-    - We need to share your personal data with other companies to prevent fraud or to reduce risk
+- We need to share personal information with third parties to provide you with the inUtil Labs products and services that you request
+- We work with entities affiliated by inUtil Labs
+- You ask that we share your personal information with a third party
+- We need to share your personal data with other companies to prevent fraud or to reduce risk
 
 We are required to disclose personal information in response to lawful requests by public authorities, including to meet national security or law enforcement requirements. We consider information, including your personal information, to be an asset to our business. This business asset may be included in connection with the acquisition of inUtil Labs, in whole or in part; a sale of some or all of inUtil Labs' assets; a merger or merger involvement; during a bankruptcy; or other transition of our business.
 
