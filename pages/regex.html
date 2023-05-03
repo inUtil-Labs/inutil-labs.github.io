@@ -104,7 +104,7 @@ permalink: /regex
   </form>
   <script>
     const mobileInput = document.querySelector('input[name="mobile"]');
-    const mobileRegex = /^[0-9]{10}$/;
+    const mobileRegex = /^[0-9]{8,11}$/;
 
     function handleWhatsappPicCheckboxChange(checkbox) {
       if (checkbox.checked) {
