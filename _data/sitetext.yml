@@ -24,7 +24,7 @@ en: &DEFAULT_EN
       - title: "[whin](https://rapidapi.com/inutil-inutil-default/api/whin2/tutorials)"
         desc: "Send and receive any message type to your WhatsApp or owned groups with this **gateway**."
         icon: fab fa-whatsapp #find more at https://fontawesome.com/icons
-      - title: "[whatsapp Profile Pic API](https://rapidapi.com/inutil-inutil-default/api/whatsapp-profile-pic/tutorials)"
+      - title: "[whatsapp Profile Pic API](/wspic)"
         desc: "Fetch the **profile picture** of any whatsapp number."
         icon: fas fa-id-badge
       - title: "[whatsapp Validator API](https://rapidapi.com/inutil-inutil-default/api/bulk-whatsapp-validator/tutorials)"
