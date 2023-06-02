@@ -1,0 +1,29 @@
+---
+layout: page
+title: Apifypic
+permalink: /apifypic
+---
+
+<h1>Thank you!</h1>
+
+We have received your payment. Please copy the token below and paste it back into Apify actor input section.
+Please write to support@inutil-labs.com in case something does not work as expected
+
+ <p id="paramValue"></p>
+
+  <script>
+    // Function to get the value of a URL parameter
+    function getURLParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Get the value of the "param" parameter from the URL
+    var paramValue = getURLParameter('token');
+
+    // Display the value on the web page
+    var paramElement = document.getElementById('paramValue');
+    paramElement.textContent = paramValue;
+  </script>
