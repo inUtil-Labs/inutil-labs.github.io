@@ -30,15 +30,18 @@ en: &DEFAULT_EN
       - title: "[whatsapp Validator API](https://rapidapi.com/inutil-inutil-default/api/bulk-whatsapp-validator/tutorials)"
         desc: "Check if a number is **registered** on whatsapp and add context based on whatsapp profiles."
         icon: far fa-comments
-      - title: "[tokin API](https://rapidapi.com/)"
+      - title: "[Phone Validator API](https://rapidapi.com/inutil-inutil-default/api/phone-validator-api/details)"
         desc: "Soon to be launched."
         icon: fas fa-question
       - title: "[mywhin API](https://rapidapi.com/inutil-inutil-default/api/mywhin/details)"
-        desc: "Your own hosted WhatsApp **gateway**, fully dedicated tenant."
+        desc: "Your own hosted WhatsApp **gateway**, fully dedicated instance."
         icon: fas fa-question
       - title: "[gasolinBot](https://gbot.inutil.info)"
         desc: "Get **real-time** oil prices around you."
         icon: fas fa-gas-pump
+      - title: "[Whatsapp groups exporter](https://apify.com/inutil_labs/whatsapp-groups-scraper)"
+        desc: "Export your whatsapp groups members into a file."
+        icon: fas fa-users
 
   portfolio:
     title: "Portfolio"
@@ -98,7 +101,7 @@ en: &DEFAULT_EN
         url: https://www.postman.com/inutil-labs
         logo: assets/img/clients/postman.png
       - title: "gravitee"
-        url: https://buy.stripe.com/test_cN29Cr3Ki2aLeVqcMM
+        url: https://www.gravitee.io/
         logo: assets/img/clients/gravitee.png
 
   team:
