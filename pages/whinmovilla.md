@@ -3,8 +3,11 @@ layout: page
 title: whinmovilla
 permalink: /whinmovilla
 ---
+
 # whinmovilla
-### **Manual del integrador**
+
+## **Manual del integrador**
+
 
 
 ## Concepto **Slots**
