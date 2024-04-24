@@ -8,32 +8,48 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    color: black;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
   }
   .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    color: #333;
+    margin-bottom: 20px;
   }
   p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .icon-container .icon {
+    font-size: 32px;
+    margin: 0 20px;
+  }
+  .icon-container .arrow {
+    font-size: 24px;
+    margin: 0 10px;
     color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
   }
-  em {
-    font-style: italic;
-  }
-  .fa-arrow-left,
-  .fa-arrow-right {
-    margin-right: 5px;
+  .icon-container .arrow:hover {
+    color: #333;
   }
 </style>
 </head>
@@ -41,8 +57,24 @@
   <div class="container">
     <h1>Welcome to PickPic</h1>
     <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with vibrant images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>
-    <p><i class="fas fa-arrow-left"></i> Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Our intuitive system keeps options streamlined. Customize further by accessing your discarded contacts list or app terms. <i class="fas fa-arrow-right"></i></p>
-    <p><em>Elevate your contact management game with PickPic today!</em></p>
+    <div class="icon-container">
+      <i class="far fa-arrow-alt-circle-left arrow" onclick="swipeLeft()"></i>
+      <i class="fas fa-user-circle icon"></i>
+      <i class="far fa-arrow-alt-circle-right arrow" onclick="swipeRight()"></i>
+    </div>
+    <p>Elevate your contact management game with PickPic today!</p>
   </div>
+
+  <script>
+    function swipeLeft() {
+      // Code to handle swipe left action
+      console.log('Swiped left!');
+    }
+
+    function swipeRight() {
+      // Code to handle swipe right action
+      console.log('Swiped right!');
+    }
+  </script>
 </body>
 </html>
