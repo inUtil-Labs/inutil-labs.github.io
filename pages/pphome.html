@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to PickPic</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -30,27 +31,9 @@
   em {
     font-style: italic;
   }
-  .arrow-left {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+  .fa-arrow-left,
+  .fa-arrow-right {
     margin-right: 5px;
-    transform: rotate(45deg);
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    padding: 2px;
-  }
-  .arrow-right {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    transform: rotate(-135deg);
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    padding: 2px;
   }
 </style>
 </head>
@@ -58,7 +41,7 @@
   <div class="container">
     <h1>Welcome to PickPic</h1>
     <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with vibrant images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>
-    <p><span class="arrow-left"></span> Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Our intuitive system keeps options streamlined. Customize further by accessing your discarded contacts list or app terms. <span class="arrow-right"></span></p>
+    <p><i class="fas fa-arrow-left"></i> Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Our intuitive system keeps options streamlined. Customize further by accessing your discarded contacts list or app terms. <i class="fas fa-arrow-right"></i></p>
     <p><em>Elevate your contact management game with PickPic today!</em></p>
   </div>
 </body>
