@@ -39,11 +39,16 @@
   }
   .icon-container .icon {
     font-size: 32px;
-    margin: 0 20px;
+    margin: 0 10px;
+    color: #555;
+  }
+  .icon-container .person-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
   }
   .icon-container .arrow {
     font-size: 24px;
-    margin: 0 10px;
     color: #555;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -67,6 +72,11 @@
     <div class="icon-container">
       <i class="fas fa-trash red-icon"></i>
       <i class="far fa-arrow-alt-circle-left arrow" onclick="swipeLeft()"></i>
+      <div class="person-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera">
+          <path d="M12 20a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4zm0-10a6 6 0 1 0-6 6 6 6 0 0 0 6-6zM22 4h-4l-1-1H7L6 4H2v2h20V4z"/>
+        </svg>
+      </div>
       <i class="far fa-arrow-alt-circle-right arrow" onclick="swipeRight()"></i>
       <i class="fas fa-check green-icon"></i>
     </div>
