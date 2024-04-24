@@ -39,16 +39,19 @@
   }
   .icon-container .icon {
     font-size: 32px;
-    margin: 0 10px;
+    margin: 0 20px;
     color: #555;
   }
   .icon-container .person-icon {
-    width: 32px;
-    height: 32px;
-    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    background-image: url('https://via.placeholder.com/40');
+    background-size: cover;
+    border-radius: 50%;
   }
   .icon-container .arrow {
-    font-size: 24px;
+    font-size: 32px;
     color: #555;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -59,8 +62,8 @@
   .icon-container .red-icon {
     color: #d9534f;
   }
-  .icon-container .green-icon {
-    color: #5cb85c;
+  .icon-container .save-icon {
+    color: black;
   }
 </style>
 </head>
@@ -72,13 +75,9 @@
     <div class="icon-container">
       <i class="fas fa-trash red-icon"></i>
       <i class="far fa-arrow-alt-circle-left arrow" onclick="swipeLeft()"></i>
-      <div class="person-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera">
-          <path d="M12 20a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4zm0-10a6 6 0 1 0-6 6 6 6 0 0 0 6-6zM22 4h-4l-1-1H7L6 4H2v2h20V4z"/>
-        </svg>
-      </div>
+      <div class="person-icon"></div>
       <i class="far fa-arrow-alt-circle-right arrow" onclick="swipeRight()"></i>
-      <i class="fas fa-check green-icon"></i>
+      <i class="fas fa-save save-icon"></i>
     </div>
     <p>Elevate your contact management game with PickPic today!</p>
   </div>
