@@ -17,7 +17,7 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #fff;
+    background-color: #d0f4e4; /* Changed background color */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -30,6 +30,9 @@
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    background-color: #d0f4e4; /* Changed background color */
+    padding: 10px;
+    border-radius: 5px;
   }
   .icon-container {
     display: flex;
@@ -43,14 +46,9 @@
     color: #555;
   }
   .icon-container .person-icon {
-    width: 60px;
-    height: 60px;
+    font-size: 60px; /* Increased font size for better visibility */
     margin: 0 20px;
-    border-radius: 50%;
-    background-image: url('https://via.placeholder.com/60');
-    background-size: cover;
-    background-position: center;
-    background-color: #fff; /* Added background color */
+    color: #555; /* Set color to match text color */
   }
   .icon-container .arrow {
     font-size: 32px;
@@ -71,15 +69,16 @@
 <body>
   <div class="container">
     <h1>Welcome to PickPic</h1>
-    <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with public images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>    
+    <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with vibrant images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>
+    <p>Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Our intuitive system keeps options streamlined. Customize further by accessing your discarded contacts list or app terms.</p>
     <div class="icon-container">
       <i class="fas fa-trash red-icon" onclick="discard()"></i>
       <i class="fas fa-arrow-left arrow" onclick="swipeLeft()"></i>
-      <i class="fas fa-user person-icon"></i> <!-- Added "fas" class -->
+      <i class="fas fa-user-circle person-icon"></i> <!-- Changed to Font Awesome Silhouette icon -->
       <i class="fas fa-arrow-right arrow" onclick="swipeRight()"></i>
       <i class="fas fa-save save-icon" onclick="save()"></i>
     </div>
-    <p>Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Empty your list by swipping right or left. Customize further by accessing your discarded contacts list or app terms.</p>
+    <p>Elevate your contact management game with PickPic today!</p>
   </div>
 
   <script>
@@ -104,4 +103,4 @@
     }
   </script>
 </body>
-</htm
+</html>
