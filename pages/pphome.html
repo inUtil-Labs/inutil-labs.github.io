@@ -9,7 +9,7 @@
   body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #d0f4e4; /* Changed background color */
     margin: 0;
     padding: 0;
   }
@@ -50,6 +50,7 @@
     background-image: url('https://via.placeholder.com/60');
     background-size: cover;
     background-position: center;
+    background-color: #fff; /* Added background color */
   }
   .icon-container .arrow {
     font-size: 32px;
@@ -70,15 +71,15 @@
 <body>
   <div class="container">
     <h1>Welcome to PickPic</h1>
-    <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with vibrant images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>    
+    <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with public images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>    
     <div class="icon-container">
       <i class="fas fa-trash red-icon" onclick="discard()"></i>
       <i class="fas fa-arrow-left arrow" onclick="swipeLeft()"></i>
-      <div class="person-icon"></div>
+      <i class="fas fa-user person-icon"></i> <!-- Added "fas" class -->
       <i class="fas fa-arrow-right arrow" onclick="swipeRight()"></i>
       <i class="fas fa-save save-icon" onclick="save()"></i>
     </div>
-    <p>Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Our intuitive system keeps options streamlined. Customize further by accessing your discarded contacts list or app terms.</p>
+    <p>Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Empty your list by swipping right or left. Customize further by accessing your discarded contacts list or app terms.</p>
   </div>
 
   <script>
@@ -103,4 +104,4 @@
     }
   </script>
 </body>
-</html>
+</htm
