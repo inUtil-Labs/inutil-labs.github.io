@@ -43,10 +43,10 @@
     color: #555;
   }
   .icon-container .person-icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin: 0 20px;
-    background-image: url('https://via.placeholder.com/40');
+    background-image: url('https://via.placeholder.com/60');
     background-size: cover;
     border-radius: 50%;
   }
@@ -59,11 +59,10 @@
   .icon-container .arrow:hover {
     color: #333;
   }
-  .icon-container .red-icon {
-    color: #d9534f;
-  }
+  .icon-container .red-icon,
   .icon-container .save-icon {
-    color: black;
+    font-size: 40px;
+    margin: 0 10px;
   }
 </style>
 </head>
@@ -73,11 +72,11 @@
     <p>Your ultimate companion for managing and enhancing your contact list! Organize effortlessly by tapping "Fetch Pictures" to adorn them with vibrant images sourced online. Imagine seeing your contacts' faces when they call, adding a personal touch to every interaction.</p>
     <p>Swipe left to discard or consider removing contacts from future rotations. A right swipe saves the picture, ensuring a suitable visual representation. Our intuitive system keeps options streamlined. Customize further by accessing your discarded contacts list or app terms.</p>
     <div class="icon-container">
-      <i class="fas fa-trash red-icon"></i>
+      <i class="fas fa-trash red-icon" onclick="discard()"></i>
       <i class="fas fa-arrow-left arrow" onclick="swipeLeft()"></i>
       <div class="person-icon"></div>
       <i class="fas fa-arrow-right arrow" onclick="swipeRight()"></i>
-      <i class="fas fa-save save-icon"></i>
+      <i class="fas fa-save save-icon" onclick="save()"></i>
     </div>
     <p>Elevate your contact management game with PickPic today!</p>
   </div>
@@ -91,6 +90,16 @@
     function swipeRight() {
       // Code to handle swipe right action
       console.log('Swiped right!');
+    }
+
+    function save() {
+      // Code to handle save action
+      console.log('Save action!');
+    }
+
+    function discard() {
+      // Code to handle discard action
+      console.log('Discard action!');
     }
   </script>
 </body>
