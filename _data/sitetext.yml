@@ -1,1 +1,168 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+#    title: We support innovation and streamline processes through automation.
+#    text: AI powered microservices
+#    button: Tell Me More
+#    buttonlink: "#services"
+
+  services:
+    title: "the Projects"
+    text: "Our handcrafted microservices:"
+    section: services
+    list:
+      - title: "Seamless Messaging Automation"
+        desc: "Effortlessly automate communications with our WhatsApp and Telegram Bots, from simple messages to large-scale deployments."
+        icon: fab fa-whatsapp #find more at https://fontawesome.com/icons
+      - title: "Comprehensive Cloud Microservices"
+        desc: "Empower your development with our diverse microservices, offering unparalleled cloud automation."
+        icon: fas fa-id-badge
+      - title: "Social Data Integration"
+        desc: "Access extensive public data from social networks to enrich your applications and services."
+        icon: far fa-comments
+      - title: "Advanced AI Integration"
+        desc: "Boost your microservices with cutting-edge LLM models through fine-tuning, inference, and tailored APIs."
+        icon: fas fa-question
+
+  portfolio:
+    title: "Portfolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
+
+  timeline:
+    title: "Timeline"
+    text: "Lorem ipsum timeline"
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Our Humble Beginnings"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "An Agency is Born"
+        year: "March 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Jekyll Theme is created"
+        year: "2019"
+        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+      - title: "Title"
+        year: "2009-2011"
+        desc: "Your description here, **Markdown** is fully supported."
+        image: assets/img/timeline/4.jpg
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "Be Part <br> of Our <br> Story!"
+
+  about:
+    title: "About Us"
+    text: "Passionate about automation and machine learning"
+    body: "Building and Connecting. We enjoy automation, connecting everything to everything. Helping systems learn their way when stepping out of structured data. Browse our creations on any of these API markets:"
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "apify"
+        url: https://apify.com/inutil_labs
+        logo: assets/img/clients/apify.png
+      - title: "rapidapi"
+        url: https://rapidapi.com/organization/inutil
+        logo: assets/img/clients/rapidapi.png
+      - title: "postman"
+        url: https://www.postman.com/inutil-labs
+        logo: assets/img/clients/postman.png
+      - title: "gravitee"
+        url: https://www.gravitee.io/
+        logo: assets/img/clients/gravitee.png
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "under the hood, you will be using our service tokin."
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+#    social:
+#      - url: https://twitter.com/inUtil_Labs
+#        icon: "fab fa-twitter"
+#      - url: https://www.linkedin.com/company/inutil-labs/
+#        icon: "fab fa-linkedin-in"
+#      - url: https://github.com/inUtil-info
+#        icon: "fab fa-github"
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
 
