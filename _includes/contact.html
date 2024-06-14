@@ -1,16 +1,17 @@
-<section id="contact" style="background-color: black; padding: 50px 0;">
+<section id="contact">    
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center mx-auto">
-                <h2 class="section-heading" style="color: white;">Special Requirements?</h2>
-                <hr class="primary" style="border-color: white;">
-                <p style="color: white;">Please contact us using this form for further information.</p>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Contact Us!</h2>
+                <hr class="primary">
+                <p></p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 mx-auto">
-                <form id="contactForm" method="POST" action="https://api.profile-picture.app/contact">
+            <div class="col-lg-6 col-lg-offset-3">
+                <form id="contactForm" method="POST">
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAcJRwpuBev87sa4" data-callback="setTurnstileToken"></div>
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -23,9 +24,7 @@
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <input type="hidden" id="cf-turnstile-response" name="cf-turnstile-response">
-                    <input type="hidden" name="siteName" value="InutilGlobalSite">
-                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAcJRwpuBev87sa4"></div>
+                    <input type="hidden" name="source" value="inutilsite">
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary" id="sendButton">Send Message</button>
                     </div>
@@ -54,13 +53,5 @@
 #contactForm .btn-primary {
     background-color: #008069;
     border-color: #2EA39F;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.primary {
-    margin-bottom: 30px;
 }
 </style>
