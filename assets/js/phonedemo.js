@@ -1,7 +1,7 @@
-document.getElementById('contactForm').addEventListener('submit', handleContactFormSubmit);
+document.getElementById('contactForm2').addEventListener('submit', handleContactFormSubmit);
 
 function setTurnstileToken(token) {
-    const tokenFieldContact = document.querySelector('#contactForm input[name="cf-turnstile-response"]');    
+    const tokenFieldContact = document.querySelector('#contactForm2 input[name="cf-turnstile-response"]');    
     if (tokenFieldContact) {
         tokenFieldContact.value = token;
         //console.log('Turnstile token set for Contact form:', token); // Debug: log the token
