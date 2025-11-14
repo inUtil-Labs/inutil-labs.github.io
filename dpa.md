@@ -3,65 +3,132 @@ layout: page
 title: Data Processing Addendum
 ---
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase">Terms of Services</h2>
+	<h2 class="section-heading text-uppercase">Data processing addendum</h2>
 </div>
 
-This Data Processing Addendum (DPA) and its applicable Exhibits apply to the Processing of Personal Data by inUtil Labs on behalf of Client (Client Personal Data) subject to the General Data Protection Regulation 2016/679 (GDPR) or any other data protection laws in order to provide services (Services) pursuant to the Agreement between Client and inUtil Labs. This DPA is incorporated into the Agreement.
+# Data Processing Addendum (DPA)
+**Last Updated: November 14th, 2025**
 
+This DPA forms part of the Agreement between **Inutil Labs, Inc.** (“Processor”) and the Client (“Controller”) regarding processing of personal data through the Services.
 
-**Processing data**
+---
 
-{% if site.analytics.google %}
+## 1. Parties
+**Processor:**  
+Inutil Labs, Inc.  
+2810 N Church St, Wilmington, DE 19802-4447  
+info@inutil-labs.com  
 
-Automatically Collected (Google Analytics):
+**Controller:**  
+The Client identified in the applicable Order Form or Agreement.
 
+---
 
-{% else %}
+## 2. Nature and Purpose of Processing
+Processor provides stateless API services. Processing occurs **only in volatile memory**, solely to generate API responses.
 
-This Data Processing Agreement ("DPA") is entered into between XXX (hereinafter referred to as the "Client") and inUtil Labs Inc (hereinafter referred to as the "Processor") effective as of the date of signing this document.
+Processor **does not**:
+- store data  
+- cache data  
+- log request content  
+- retain personal data after processing  
 
-{% endif %}
+Purpose: performance of the contract between Parties.
 
-**Purpose of the Agreement**
+---
 
-The Client engages the Processor to provide personal data processing services on its behalf and for its account in relation to sending and receiving messages on the WhatsApp network of XXXXXXX's clients.
+## 3. Categories of Data Subjects
+- Individuals whose data Controller submits to the API (e.g., phone number owners)
 
-The Processor will provide the services through its message gateway infrastructure, without storing personal data and safeguarding the credentials necessary to act on behalf of the Client on the WhatsApp network. The credentials will not be usable outside the Processor's infrastructure in the event of a security breach.
+---
 
-**Processor's Obligations**
+## 4. Categories of Personal Data
+- Phone numbers or other metadata submitted in API requests  
+- Technical request parameters (transient only)  
 
-The Processor agrees to:
+---
 
-a) Process personal data only to the extent necessary for the provision of services and in compliance with the Client's instructions.
+## 5. Duration of Processing
+Processing is ephemeral and ceases immediately after each API response.
 
-b) Provide the necessary infrastructure for the processing of personal data and ensure its security.
+No data is retained by Processor.
 
-c) Ensure that its personnel are properly trained in the protection of personal data and confidentiality.
+---
 
-d) Take all necessary technical and organizational measures to ensure the security of personal data.
+## 6. Processor Obligations
+Processor shall:
+- Process data only on documented instructions  
+- Maintain confidentiality  
+- Implement appropriate security measures  
+- Assist with GDPR obligations to the extent applicable  
+- Notify Controller of any personal data breach without undue delay  
+- Delete all transient data immediately after use (automatic, in-memory only)  
 
-e) Notify the Client promptly and in full about any security breaches that affect personal data.
+---
 
-f) Assist the Client in fulfilling its obligations to respond to requests from data subjects and cooperate with data protection authorities as necessary.
+## 7. Transfers to the United States
+Processor is located in the United States.  
+Transfers are governed by:
+- **EU Standard Contractual Clauses (SCCs)**  
+- No retention minimizes risk  
 
-g) Ensure that personal data is deleted or returned to the Client at the end of the service provision, unless their retention is required by applicable law.
+---
 
-**Client's Obligations**
+## 8. Subprocessors
+Processor uses the following subprocessors:
 
-The Client agrees to:
+| Subprocessor | Purpose | Location |
+|-------------|----------|----------|
+| Akamai / Linode | Compute & hosting | USA |
+| Cloudflare | Network edge security | Global |
+| Stripe | Billing-only processor | USA |
 
-a) Provide clear and detailed instructions to the Processor regarding the processing of personal data.
+Processor shall notify Controller of changes to subprocessors when reasonably possible.
 
-b) Ensure that the personal data provided to the Processor is accurate and up-to-date.
+---
 
-c) Ensure that it has the consent of the data subjects for their personal data to be processed by the Processor in accordance with this DPA.
+## 9. Controller Obligations
+Controller shall:
+- Ensure it has lawful basis to submit data  
+- Not send excessive or unnecessary personal data  
+- Configure its systems to avoid transmitting data it does not intend to process  
 
-d) Comply with all applicable obligations of data controllers under applicable law.
+---
 
-**Duration of the DPA**
+## 10. Security
+Processor utilizes:
+- TLS encryption  
+- Isolated compute environments  
+- Infrastructure firewalls  
+- Cloudflare WAF  
+- No data persistence  
 
-This DPA shall remain in effect for the duration of the Processor's provision of services to the Client.
+---
 
-**Applicable Law**
+## 11. Breach Notification
+Processor will notify Controller via **info@inutil-labs.com** without undue delay in the event of a personal data breach.
 
-This DPA shall be governed and interpreted in accordance with the laws of the European Union, including the General Data Protection Regulation ("GDPR").
+---
+
+## 12. Data Subject Requests
+Since Processor does not retain data, Processor cannot:
+- Access  
+- Rectify  
+- Export  
+- Erase  
+
+request content.
+
+Processor will forward requests received directly from individuals to Controller.
+
+---
+
+## 13. Termination
+Upon termination of the Agreement, Processor retains no data and therefore has no additional deletion obligations.
+
+---
+
+## 14. Contact
+All communications under this DPA:  
+**info@inutil-labs.com**
+
